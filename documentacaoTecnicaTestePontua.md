@@ -158,10 +158,6 @@ Para executar este projeto localmente, siga os seguintes passos:
 5. O desenvolvimento então focou em criar a página `Home`, onde os personagens são renderizados.
 6. O projeto está em andamento e novos recursos/páginas estão sendo adicionados.
 
-## Implantação
-
-O projeto está hospedado na Vercel e pode ser acessado em [marvel-frontend.vercel.app](https://marvel-frontend.vercel.app).
-
 ## Contribuições
 
 Contribuições para o projeto são bem-vindas. Se encontrar problemas ou tiver melhorias para sugerir, sinta-se à vontade para abrir uma issue ou enviar um pull request.
