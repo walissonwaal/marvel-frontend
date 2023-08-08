@@ -115,8 +115,61 @@ bem como seu nome e imagem;<br>
 # Documentação da Aplicação
 
 
->Você pode escrever a documentação da sua aplicação a partir daqui...
-> 
+# Projeto Marvel Frontend
 
+Este repositório contém o código frontend para o projeto Marvel. O projeto é construído utilizando o Next.js e utiliza o Tailwind CSS para estilização.
 
----
+## Começando
+
+Para executar este projeto localmente, siga os seguintes passos:
+
+1. Clone o repositório para sua máquina local:
+   ```
+   git clone https://github.com/seu-nome-de-usuário/marvel-frontend.git
+   ```
+
+2. Navegue até o diretório do projeto:
+   ```
+   cd marvel-frontend
+   ```
+
+3. Instale as dependências usando npm ou yarn:
+   ```
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```
+   npm run dev
+   ```
+
+   O aplicativo estará acessível em `http://localhost:3000` no seu navegador.
+
+## Estrutura do Projeto
+
+- Projeto desenvolvido com Nextjs 13.4 utilizando App Routes.
+
+## Processo de Desenvolvimento
+
+1. O projeto foi iniciado usando o comando `npx create-next-app` para configurar a estrutura básica do aplicativo Next.js.
+2. A estilização foi feita usando tanto o Tailwind CSS quanto CSS personalizado onde necessário.
+3. O desenvolvimento começou com a criação de componentes reutilizáveis, que foram usados para construir o layout.
+4. Após criar os componentes básicos, o layout da aplicação foi desenvolvido.
+5. O desenvolvimento então focou em criar a página `Home`, onde os personagens são renderizados.
+6. O projeto está em andamento e novos recursos/páginas estão sendo adicionados.
+
+## Implantação
+
+O projeto está hospedado na Vercel e pode ser acessado em [marvel-frontend.vercel.app](https://marvel-frontend.vercel.app).
+
+## Contribuições
+
+Contribuições para o projeto são bem-vindas. Se encontrar problemas ou tiver melhorias para sugerir, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Agradecimentos
+
+Agradecimentos especiais aos criadores do Next.js, Tailwind CSS e da API da Marvel por tornar este projeto possível.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.

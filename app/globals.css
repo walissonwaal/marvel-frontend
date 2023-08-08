@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,6 +17,40 @@ input::placeholder {
   border: 0.7px solid #B7B7B7;
 }
 
+.pagination-before {
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #D0D5DD;
+  background: #FFF;
+
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-after {
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #D0D5DD;
+  background: #FFF;
+
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-item {
+  border: 1px solid #D0D5DD;
+  background: #FFF;
+
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
 .input-with-icon {
   position: relative;
 }
@@ -27,4 +61,76 @@ input::placeholder {
   transform: translateY(-50%);
   right: 0.75rem;
   pointer-events: none;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.14625rem;
+  margin-bottom: 2rem;
+}
+
+.large-button {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.0975rem;
+}
+.small-button {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.css-1u9des2-indicatorSeparator {
+  display: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-shadow {
+  box-shadow: 6px 0px 18px 0px rgba(0, 0, 0, 0.06);
+}
+
+.tracking-title {
+  letter-spacing: -0.48px;
+}
+.tracking-paragraph {
+  letter-spacing: -0.36px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-input {
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: padding 0.3s;
+}
+
+.search-input:focus {
+  padding-right: 40px;
 }

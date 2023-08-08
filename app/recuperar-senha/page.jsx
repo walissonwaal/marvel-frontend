@@ -1,11 +1,14 @@
 'use client'
-import { InputForm, LargerButton } from '@/components';
+import { InputForm, LargeButton } from '@/components';
 import LayoutLogin from '@/layout/LayoutLogin'
 import Image from 'next/image';
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 const index = () => {
   const [isUser, setIsUser] = useState(false)
+  const router = useRouter()
+
   return (
     <LayoutLogin>
       {!isUser ? (
@@ -18,8 +21,8 @@ const index = () => {
           </p>
 
           <form className='flex flex-col gap-3' action="" method="post">
-            <InputForm placeholder='Informe seu e-mail' type='email' name='email' />
-            <LargerButton color='bg-[#C3C3C3]' textColor='text-gray150' type='submit'>enviar link</LargerButton>
+            <InputForm placeholder='Informe seu e-mail' icon='/img/icon-arroba.svg' type='email' name='email' />
+            <LargeButton color='bg-[#C3C3C3]' textColor='text-gray150' type='submit'>enviar link</LargeButton>
           </form>
         </div>
       ) : (
@@ -32,7 +35,12 @@ const index = () => {
           </p>
 
           <form className='flex flex-col' action="" method="post">
-            <LargerButton color='bg-blueButton' textColor='text-gray150' type='submit'>voltar para o login</LargerButton>
+            <LargeButton
+              onClick={() => router.push('/login')}
+              color='bg-blueButton'
+              textColor='text-gray150'
+              type='submit'>voltar para o login
+            </LargeButton>
           </form>
         </div>
       )}

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "icon": "/img/icon-menu-home.svg"
+  },
+  {
+    "name": "Perfil",
+    "path": "/perfil",
+    "icon": "/img/icon-menu-perfil.svg"
+  }
+]

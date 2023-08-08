@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const index = ({ placeholder, type, name, id, img }) => {
+const index = ({ placeholder, type, name, id, icon, value, onChange }) => {
   return (
     <div className='relative rounded-md border border-gray300 input-with-icon'>
       <input
@@ -9,10 +9,12 @@ const index = ({ placeholder, type, name, id, img }) => {
         name={name}
         id={id}
         placeholder={placeholder}
+        value={value}
+        onChange={onChange}
       />
-      {img ? (
+      {icon ? (
         <div className='input-icon'>
-          <Image src={img} width={16} height={16} />
+          <Image src={icon} width={16} height={16} />
         </div>
       ) : null}
     </div>

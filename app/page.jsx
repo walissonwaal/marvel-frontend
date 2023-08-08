@@ -1,7 +1,9 @@
-import Login from '@/app/login/page'
+import Home from "./home/page";
+// import Login from "./login/page";
 
-export default function Home() {
-  return (
-    <Login />
-  )
-}
+
+const Page = () => {
+  return <Home />;
+};
+
+export default Page;
